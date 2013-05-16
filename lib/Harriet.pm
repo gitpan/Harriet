@@ -3,7 +3,7 @@ use 5.008005;
 use strict;
 use warnings;
 
-our $VERSION = "0.01";
+our $VERSION = "0.02";
 
 sub new {
     my ($class, $dir) = @_;
@@ -87,7 +87,7 @@ harriet script is just a perl script has C<.pl> extension. Example code is here:
                 die $!;
             }
         );
-        Harriet->save_guard($server);
+        $HARRIET_GUARDS::MEMCACHED = $server;
         '127.0.0.1:' . $server->port;
     };
 
@@ -114,6 +114,10 @@ harriet loads harriet script named 't/harriet/memcached.pl'.
 L<App::Prove::Plugin::Harriet> loads harriet scripts under the C<t/harriet/>, and set these to environment variables.
 
 This plugin starts daemons before running test cases!
+
+=head1 WHY Harriet?
+
+L<Harriet|http://en.wikipedia.org/wiki/Harriet_(tortoise)> is very long lived tortoise. Harriet.pm makes long lived process.
 
 =head1 LICENSE
 

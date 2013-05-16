@@ -56,7 +56,7 @@
       },
       "Harriet" : {
          "file" : "lib/Harriet.pm",
-         "version" : "0.01"
+         "version" : "0.02"
       }
    },
    "release_status" : "stable",
@@ -70,5 +70,5 @@
          "web" : "https://github.com/tokuhirom/Harriet"
       }
    },
-   "version" : "0.01"
+   "version" : "0.02"
 }

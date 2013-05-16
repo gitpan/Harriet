@@ -30,7 +30,7 @@ provides:
     version: 0
   Harriet:
     file: lib/Harriet.pm
-    version: 0.01
+    version: 0.02
 requires:
   Pod::Usage: 0
   perl: 5.008005
@@ -38,4 +38,4 @@ resources:
   bugtracker: https://github.com/tokuhirom/Harriet/issues
   homepage: https://github.com/tokuhirom/Harriet
   repository: git://github.com/tokuhirom/Harriet.git
-version: 0.01
+version: 0.02
